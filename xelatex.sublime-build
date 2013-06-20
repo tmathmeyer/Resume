@@ -1,0 +1,10 @@
+{
+	"shell_cmd": "xelatex \"$file\"",
+
+	 "variants": [
+        {"shell_cmd": "start chrome \"${file/.tex/.pdf/}\"",
+          "name": "View XeLaTeX PDF in chrome"
+        }
+    ]
+	
+}
