@@ -1,0 +1,237 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Friggeri Resume/CV
+% XeLaTeX Template
+% Version 1.0 (5/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Adrien Friggeri (adrien@friggeri.net)
+% https://github.com/afriggeri/CV
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important notes:
+% This template needs to be compiled with XeLaTeX and the bibliography, if used,
+% needs to be compiled with biber rather than bibtex.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{friggeri-cv} % Add 'print' as an option into the square bracket to remove colors from this template for printing
+
+\addbibresource{bibliography.bib} % Specify the bibliography file to include publications
+
+\begin{document}
+
+\header{Ted}{ Meyer}{Computer Science Major} % Your name and current job title/field
+
+%----------------------------------------------------------------------------------------
+%	SIDEBAR SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{aside} % In the aside, each new line forces a line break
+\section{contact}
+3 East View Drive
+Simsbury, Connecticut
+USA
+~
++1 (860) 255 8339
++1 (860) 408 9341
+~
+\href{mailto:tjmeyer@wpi.edu}{tjmeyer@wpi.edu}
+\href{http://users.wpi.edu/~tjmeyer}{users.wpi.edu/~tjmeyer}
+\section{programming}
+Java
+JavaScript
+Python
+CSS3 \& HTML5
+\section{Interests}
+Networking
+Linux
+Open Source
+Biking
+Squash
+\section{References}
+Jeff Troutman
+(860) 678-0444
+jeff.troutman@cocc.com
+~
+Peter Meyer
+peter.meyer@covidien.ae
+\end{aside}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{education}
+
+\begin{entrylist}
+%------------------------------------------------
+\entry
+{2012--2015}
+{Bachelor of Science {\normalfont Computer Science}}
+{Worcester Polytechnic Institute}
+{\emph{Specialization in Networks, Databases, and User Interfaces}}
+%------------------------------------------------
+\entry
+{2008--2012}
+{High School Diploma}
+{Simsbury High School}
+{}
+%------------------------------------------------
+\entry
+{2011}
+{Algorithms: Design and Analysis, part 1}
+{Stanford (Coursera)}
+{\emph{Online class covering basic algorithm design}}
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{experience}
+
+\begin{entrylist}
+%------------------------------------------------
+\entry
+{2013}
+{Surface Metrology Lab}
+{Worcester, Massachusetts}
+{\emph{Programmer} \\
+Volunteer programmer in one of the many academic laboritories on campus at WPI}
+%------------------------------------------------
+\entry
+{Jun--Aug 2012}
+{Connecticut Online Computer Corperation}
+{Avon, Connecticut}
+{\emph{Intern in Security} \\
+	Worked with the security team to protect the networks and physical security of COCC.
+	\begin{itemize}
+		\item Router/Firewall configuration parser (Java/Python)
+		\begin{itemize}
+			\item Parsed the config files and generated a graphical depiction of errors and conflicts
+		\end{itemize}
+		\item Updated machine software to meet security specifications
+		\item Monitored network and physical trafic through the building
+	\end{itemize}
+}
+%------------------------------------------------
+\entry
+{2009--2011}
+{Hartford Marathon Foundation}
+{Glastonbury, Connecticut}
+{\emph{Race Staff} \\
+Worked with other members of the race staff and volunteers to set up and remove equiptment for running races, bike races, and triathelons}
+%------------------------------------------------
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	AWARDS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{awards}
+
+\begin{entrylist}
+%------------------------------------------------
+\entry
+{2011-2012}
+{School Champion}
+{GE Computer Science Competition}
+{Attained the highest score in my school in both my junior and senior years of high school}
+%------------------------------------------------
+\entry
+{2011}
+{Commended Scholar}
+{National Merit Scholarship Corp.}
+{}
+%------------------------------------------------
+\entry
+{2008-2012}
+{School Champion, American Math Challenge and American Invitational Mathematics Exam}
+{Mathematics Association of America}
+{Scored the highest in my grade on the AMC 10 both as a freshman and sophomore, the AMC 12 both my junior and senior years, and the AIME as a senior}
+%------------------------------------------------
+\entry
+{2012}
+{AP Scholar With Distinction}
+{College Board}
+{Scored a 5 on the following AP exams: Computer Science, BC Calculus, AB Calculus, Chemistry, Biology, Statistics, and a 4 on US History, Physics C (Mechanics)}
+%------------------------------------------------
+\entry
+{2012}
+{Honor Roll}
+{Simsbury High School}
+{Awarded to students who have satisfied the requirements of Honor Roll every quarter of High School for all four years}
+%------------------------------------------------
+\end{entrylist}
+
+\section{Projects}
+\begin{entrylist}
+%------------------------------------------------
+\entry
+{2011-Present}
+{Networking Chat Client and Server}
+{\href{https://github.com/tmathmeyer/Synchronous-Network-Protocol}{github}}
+{A packet framework for sending data from a centralized server to multiple clients. Used in many of my other projects
+\begin{itemize}
+	\item\href{https://github.com/tmathmeyer/Synchronous-Network-Protocol}{https://github.com/tmathmeyer/Synchronous-Network-Protocol}
+	\item\href{https://github.com/tmathmeyer/network-registration-protocol}{https://github.com/tmathmeyer/network-registration-protocol}
+\end{itemize}
+}
+%------------------------------------------------
+\entry
+{2012-Present}
+{AutoHotKey Scripts}
+{\href{https://github.com/tmathmeyer/AHK-projects}{github}}
+{A library of some autohotkey scripts written by me or pulled from the internet and packaged. I use most of these personally in my general workflow}
+%------------------------------------------------
+\entry
+{2012-present}
+{Minecraft Mods:}
+{server-side bukki pluggins}
+{\emph{External Chat (Co-author, Owner)}
+	\begin{itemize}
+		\item\href{https://github.com/tmathmeyer/external_chat--bukkit-mod-}{github.com/tmathmeyer}
+		\item A mod to allow players to communicate with the server even when they are not playing the game
+	\end{itemize} 
+\emph{BookSuite (Co-author)}
+	\begin{itemize}
+		\item\href{https://github.com/Jikoo/BookSuite}{github.com/Jikoo/BookSuite}
+		\item\href{http://dev.bukkit.org/server-mods/booksuite/}{dev.bukkit.org/server-mods/booksuite/}
+		\item A mod that adds tons of functionality to books in Minecraft
+	\end{itemize}
+}
+%------------------------------------------------
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	PUBLICATIONS SECTION
+%----------------------------------------------------------------------------------------
+
+%\section{publications}
+%
+%\printbibsection{article}{article in peer-reviewed journal} % Print all articles from the bibliography
+%
+%\printbibsection{book}{books} % Print all books from the bibliography
+%
+%\begin{refsection} % This is a custom heading for those references marked as "inproceedings" but not containing "keyword=france"
+%\nocite{*}
+%\printbibliography[sorting=chronological, type=inproceedings, title={international peer-reviewed conferences/proceedings}, notkeyword={%france}, heading=subbibliography]
+%\end{refsection}
+%
+%\begin{refsection} % This is a custom heading for those references marked as "inproceedings" and containing "keyword=france"
+%\nocite{*}
+%\printbibliography[sorting=chronological, type=inproceedings, title={local peer-reviewed conferences/proceedings}, keyword={france}, %heading=subbibliography]
+%\end{refsection}
+%
+%\printbibsection{misc}{other publications} % Print all miscellaneous entries from the bibliography
+%
+%\printbibsection{report}{research reports} % Print all research reports from the bibliography
+%
+%----------------------------------------------------------------------------------------
+
+\end{document}
