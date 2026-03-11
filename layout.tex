@@ -1,0 +1,60 @@
+\usepackage{geometry}
+\usepackage{sectsty}
+\usepackage{marginnote}
+\usepackage{fontspec}
+\usepackage[bookmarks, colorlinks, breaklinks]{hyperref}
+\usepackage[usenames, dvipsnames]{xcolor}
+
+
+\newfontfamily\verlag[
+  Path = fonts/verlag/,
+  UprightFont = Verlag-Book.ttf,
+  BoldFont = Verlag-Book.ttf,
+  ItalicFont = Verlag-Book-Italic.ttf,
+  BoldItalicFont = Verlag-Book-Italic.ttf
+]{Verlag-Book.ttf}
+
+
+\geometry{
+  % letterpaper for US, a4paper for international.
+  paper=letterpaper,
+  top=3.25cm,
+  bottom=4cm,
+  left=3.5cm,
+  right=3.5cm,
+  headheight=0.75cm,
+  footskip=1cm,
+  headsep=0.75cm,
+}
+
+
+\hypersetup{
+  linkcolor=blue,
+  citecolor=blue,
+  filecolor=black,
+  urlcolor=MidnightBlue
+}
+
+
+% Font configuration:
+\sectionfont{\verlag\fontsize{13.5pt}{18pt}\selectfont}
+\subsectionfont{\mdseries\scshape\normalsize}
+\subsubsectionfont{\mdseries\upshape\bfseries\normalsize}
+\setlength{\parindent}{0pt}
+
+
+% Sticking the date in the left margin requires some weird hacks
+\newcommand{\years}[1]{\marginnote{\scriptsize #1}}
+\reversemarginpar
+
+
+% Uncommenting this allows the dates to be left-justified
+% \renewcommand*{\raggedleftmarginnote}{}
+% \setlength{\marginparsep}{-10pt}
+
+
+% Allow links to open in a new tab (if opening the PDF in a browser)
+\newcommand{\link}[2]{\href[pdfnewwindow=true]{#1}{#2}}
+
+
+\pagestyle{empty}
