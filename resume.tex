@@ -1,47 +1,76 @@
 \documentclass[11pt]{article}
+\input{layout.tex}
+
 
 \newcommand{\AuthorName}{Theodore Meyer}
 
-\input{layout.tex}
 
 \hypersetup{
 	pdftitle={\AuthorName - Curriculum Vitae},
 	pdfauthor={\AuthorName}
 }
 
+
 \begin{document}
+
 
 \verlag
 {\LARGE\bfseries \AuthorName}
-\bigskip\bigskip
+\medskip
+
 
 Phone: \link{tel:8602558339}{860-255-8339}\\
 Email: \link{mailto:contact@tedm.io}{contact@tedm.io}\\
-Website: \link{https://tedm.io}{tedm.io}\\
-Kirkland, Washington\\
-
-\section*{Current position}
-\emph{Software Engineer}, Google - Chromium Video\\
+Website: \link{https://tedm.io}{tedm.io}
 
 \section*{Work Experience}
-\years{2018-present}Google - Chromium Video\\
-\years{2016-2017}Google - Android Security\\
-\years{2015-2105}Microsoft - IIS\\
-\years{2014-2014}TripAdvisor - SEO\\
-\years{2013-2013}TripAdvisor - Facebook Application\\
+
+\years{2018-present}Google - Chrome Video\\ {
+\footnotesize
+I ship features for the Chrome video player including HLS and Hardware
+Acceleration, as well as devloping web standards, improving security \&
+improving general video web-developer experience. The vast majority of my work
+is \link{https://chromium-review.googlesource.com/q/author:tmathmeyer@chromium.org}{open source}
+}
+
+\years{2016-2017}Google - Android Security\\ {
+\footnotesize
+Developed automation for triaging security vulnerabilities in Android, helping
+to payout ~\$5mm per-year in bug bounties.
+}
+
+\years{summer 2015}Microsoft - IIS\\ {
+\footnotesize
+Internship on the IIS (Microsoft Webserver) team. I started the development of
+the Administration REST Api, which was launched a few years after my internship.
+}
+
+\years{summer 2013\\summer 2014}TripAdvisor - SEO \& Social\\ {
+\footnotesize
+Two summers of internships - first on the social team developing a Facebook
+App for sharing travel stories and stats, and then on the SEO team.
+}
 
 \section*{Education}
-\years{2016}\textsc{BS} in Computer Science, Worcester Polytechnic Institute\\
+\years{2016}\textsc{BSc}, Computer Science, Worcester Polytechnic Institute
+
+\section*{Teaching}
+\years{2013-2016}Teaching Assistant in the Computer Science Department\\{
+\footnotesize
+1102-\textit{Accelerated Intro to Program Design}, 2011-\textit{Assembly Language}, 2012-\textit{Object Oriented Design Concepts}, 2223-\textit{Algorithms}, 2303-\textit{Systems Programming Concepts}, 3013-\textit{Operating Systems}, 3733-\textit{Software Engineering}, 4241-\textit{Webware: Technology for Network Information Systems} 
+}
+
+\section*{Role-Relevant work}
+I took the CS-degree equivalent of this class as an undergrad: 3431-\textit{Database Systems}.
+Since then, I frequently write queries (though seldom design schemas) using Google's internal
+custom relational database \textit{Bigtable}. I've made a few small personal projects that end
+up using small database schemas for state management, such as \link{https://what2pick.com}{what2pick}.
 
 \section*{Talks}
 \years{2026} Google - \textit{Advanced Presentation Design Using \LaTeX}\\
-\years{2025} \link{https://2025.demuxed.com/}{Demuxed} - \textit{A Native HLS Player for Chrome}\\
+\years{2025} \link{https://2025.demuxed.com/}{Demuxed} - \textit{A Native HLS Player for Chrome}
 
-\vfill
-
-\begin{center}
-	\tiny
-	Last updated: \today~~\raisebox{-0.5pt}{\textbullet}~~\link{https://github.com/tmathmeyer/resume}{github.com/tmathmeyer/resume}
-\end{center}
+\section*{References}
+For the sake of other's privacy, please contact me directly for references.
 
 \end{document}
